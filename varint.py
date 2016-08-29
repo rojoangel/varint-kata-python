@@ -12,5 +12,8 @@ def swapTheTwoPartsOfTheRepr(inputStringBitRepr):
 	part2 = inputStringBitRepr[7:14]
 	return part2 + part1
 
+def addMostSignificantBit(inputStringBitRepr):
+	return "1" + inputStringBitRepr[0:7] + "0" + inputStringBitRepr[7:14]
+
 #if __name__ == '__main__':
 #	swapTheTwoPartsOfTheRepr("s0000m0x00000e")
