@@ -15,5 +15,8 @@ def swapTheTwoPartsOfTheRepr(inputStringBitRepr):
 def addMostSignificantBit(inputStringBitRepr):
 	return "1" + inputStringBitRepr[0:7] + "0" + inputStringBitRepr[7:14]
 
+def varInt(inputInt):
+	return addMostSignificantBit(swapTheTwoPartsOfTheRepr(convertToBinaryRepr(inputInt)))
+
 #if __name__ == '__main__':
 #	swapTheTwoPartsOfTheRepr("s0000m0x00000e")

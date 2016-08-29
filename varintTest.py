@@ -22,6 +22,15 @@ class VarintTest(unittest.TestCase):
 	def test_addMostSignificantBit_129(self):
 		self.assertEqual("1000000100000001", addMostSignificantBit("00000010000001"))
 
+	def test_varInt_128(self):
+		self.assertEqual("1000000000000001", varInt(128))
+
+	def test_varInt_129(self):
+		self.assertEqual("1000000100000001", varInt(129))
+
+	def test_varint_300(self):
+		self.assertEqual("1010110000000010", varInt(300))
+
 if __name__ == '__main__':
 	unittest.main(verbosity=2)
 	print(testResult)
